@@ -24,3 +24,4 @@ Route::get('/about', function () {
 });
 
 Route::get('/cars', 'CarsController@index');
+Route::get('/cars/{id}', 'CarsController@show');

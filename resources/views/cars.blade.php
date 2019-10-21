@@ -10,8 +10,9 @@
 
     <ul>
         @foreach($cars as $car)
-            <li>
-                {{ $car->producer }} {{ $car->title }} - {{ $car->number_of_doors}} doors
+            <li class="list">
+                <a href="/cars/{{$car->id}}">{{ $car->producer }}</a> 
+                <small>{{ $car->title }} - {{ $car->number_of_doors}} doors</small>
             </li>
         @endforeach
     </ul>
