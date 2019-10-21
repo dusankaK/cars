@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\CarsController;
+
 Route::get('/', function () {
     $name = 'Dusanka';
     $age = 26;
@@ -20,3 +22,5 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/cars', 'CarsController@index');
